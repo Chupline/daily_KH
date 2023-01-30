@@ -1,0 +1,37 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> 이벤트 </title>
+   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script type="text/javascript">
+      //<![CDATA[
+      $(function () {
+         // <a>태그는 클릭시 문서이동의 기능을 가지고 있다.
+         // <a>태그의 문서이동을 차단할 수 있다.
+         $("#btn1").click(function () {
+            $("p").css("background-color", "purple");
+            return false;
+         })
+
+         $("#btn2").click(function (e) {
+            e.preventDefault(); // preventDefault : <a>태그의 링크 기능을 차단시킨다.
+            $("p").css("background-color", "yellow");
+         })
+         
+
+      });
+//]]>
+   </script>
+</head>
+
+<body>
+   <a href="http://w3.org/" id="btn1">버튼1</a><br /><br />
+   <a href="http://w3.org/" id="btn2">버튼2</a><br /><br />
+   <a href="http://w3.org/" id="btn3">버튼3</a><br /><br />
+   <p>내용</p>
+</body>
+
+</html>

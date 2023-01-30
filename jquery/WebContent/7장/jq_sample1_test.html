@@ -1,0 +1,31 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> 선택자 </title>
+   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>    <!-- jquery 라이브러리 연결 -->
+   <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->  <!-- 네트워크 전송 방식 (CDN) -->
+   <script type="text/javascript">
+      //<![CDATA[
+      $(document).ready(function () {  // 문서가 준비되면 실행되는 이벤트 (jquert 원래 방식)
+         document.querySelector('h1').style.color = 'blue'; 
+      });
+      $(function () { // $(); : $(document).ready();를 줄인 방식
+         $('h1').css('color', 'green');                         // jquery
+         // document.querySelector('h1').style.color = 'red';   // javascripy
+      });
+      
+      // jquery 동작 방식, 형식
+      // $(document).ready(); = $(function(){ 실행문 });   : 후자를 주로 사용 
+
+//]]>
+   </script>
+</head>
+
+<body>
+   <h1>제이쿼리</h1>
+</body>
+
+</html>

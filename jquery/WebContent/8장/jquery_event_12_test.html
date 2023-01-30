@@ -1,0 +1,36 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> 이벤트 </title>
+   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script type="text/javascript">
+      //<![CDATA[
+      $(function () {
+         $("h1 a").bind("mouseover focus", "h1 a", function () { //focus : tab키 눌러서 확인 가능
+            $(this).css("background-color", "yellow");
+         });
+
+         $(document).on("mouseover focus", "h2 a", function () { //focus : tab키 눌러서 확인 가능
+            $(this).css("background-color", "yellow");
+         });
+
+         $("h2").append("<a href='#'>생성된 요소</a>");
+
+    
+
+   
+
+      });
+//]]>
+   </script>
+</head>
+
+<body>
+   <h1><a href="#">버튼</a></h1>
+   <h2></h2>
+</body>
+
+</html>
