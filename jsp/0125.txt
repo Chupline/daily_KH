@@ -1,0 +1,31 @@
+1. 디렉티브: JSP 페이지에 대한 설정 정보를 지정할 때 사용
+    <%@ page
+    <%@ include
+2. 스크립트 요소 : java 코드를 사용하기 위함이다.
+    <% %> <%= %> <%! %>
+3. 기본 객체 : 웹 프로그램에 필요한 기능을 제공한 객체
+	request, response, out, application, pageContext, session
+4. 표현 언어 (EL)
+5. JSTL (액션태그)
+	
+---
+class Student {
+	int sno;
+    private String name;
+    Student(int sno, String name) {
+         this.sno = sno;
+         this.name =name;
+    }
+    String getName() {
+         return name;
+    }
+}
+class StudentRun {
+    void main() {
+        Student s1 = new Student(1, "홍길동");
+        // System.out.println(s1.name);
+        System.out.println(s1.getName);
+        
+    }
+}
+

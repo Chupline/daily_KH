@@ -1,0 +1,2 @@
+servlet : http 통신(request, response)을 지원하는 자바 클래스
+javabean : 데이터 표현(저장,읽기)을 위한 자바 클래스

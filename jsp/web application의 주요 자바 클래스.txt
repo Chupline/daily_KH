@@ -1,0 +1,3 @@
+[ web application의 주요 자바 클래스 ]
+- servlet class: HTTP를 지원하는 자바 클래스
+- javabean class: 데이터를 담는 자바 클래스
