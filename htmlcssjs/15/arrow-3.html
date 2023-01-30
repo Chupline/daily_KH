@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Fuctions</title>
+</head>
+<body>
+    <script>
+        // 방법1 : 매개변수가 2개인 함수
+        let sum = function(a,b) {
+            return a + b;
+        }
+        document.write("두 수의 합 : " + sum(100,200) + "<br>");
+        
+        
+        // 방법2 : 매개변수가 2개인 화살표 함수
+        let sum2 = (a,b) => a+b;
+        document.write("두 수의 합 : " + sum2(10,20))
+
+    </script>
+</body>
+</html>

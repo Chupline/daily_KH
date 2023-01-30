@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Fuctions</title>
+</head>
+<body>
+    <script>
+        // 방법1 : 매개변수가 없는 함수
+        const hi1 = function(){
+            return "안녕하세요?";
+        }
+        
+        // 방법2 : 매개변수가 없는 화살표 함수
+        const hi2 = () => {return "안녕하세요!"};
+        
+        // 방법3 : 매개변수가 없는(중괄호 생략) 화살표 함수
+        const hi3 = () => "안녕하세요.";
+        
+        alert(hi1());
+        alert(hi2());
+        alert(hi3());
+        </script>
+</body>
+</html>

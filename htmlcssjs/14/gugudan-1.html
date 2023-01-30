@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>구구단 - for문</title>
+	<style> 
+		table {
+			margin: 20px;
+			float: left;
+			border: 1px solid #ccc;
+			border-collapse: collapse;
+		}
+		th{
+			border: 1px solid #ccc;
+			border-collapse: collapse;
+			padding: 20px;
+			background-color: #eee;
+		}
+		td {
+			border: 1px dotted #ccc;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<center><h1>구구단</h1></center>
+	<script>
+		var i, j;
+		
+		for (i = 1; i <= 9; i++) {
+			document.write("<table>");
+			document.write("<tr><th>" + i + "단</th></tr>");
+				for (j = 1; j <= 9; j++) {
+					document.write("<tr><td>" + i +" X " + j + " = " + i*j + "<br></td></tr>");
+				}
+				document.write("</table>")
+			}
+	</script>
+</body>
+</html>

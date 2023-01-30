@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Fuctions</title>
+</head>
+<body>
+    <script>
+        // 방법1 : 매개변수가 1개인 함수
+        let hi = function(user) {
+            document.write(`${user}님, 안녕하세요! <br>`);
+        }
+        hi("경희");
+        
+        // 방법2 : 매개변수가 1인화살표 함수
+        let hi2 = user => document.write(`${user},님 안녕하세요?`);
+        hi2("경희");
+    </script>
+</body>
+</html>
