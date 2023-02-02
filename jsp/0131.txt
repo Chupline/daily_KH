@@ -1,0 +1,9 @@
+Spring Legacy <- 설정을 수작업으로, IDE <- STS = eclips + spring plugin
+Spring boot <- 설정을 간호화 ... , 인텔리제이 커뮤니티 버전
+
+[ MVC Model2 방식 ] 클래스 설계
+browser 	-> 	request   -> controller(servlet,handler) 	   ->	service 	->	dao - dbcp(jdbc) 	-> db
+id=hong&name=홍길동		javabean(id,name)=dto			dto,con	 	crud			member테이블(id,name)
+					session.setAttribute("member",vo)  <- 	  vo		<-     member객체=vo 	<-
+					| (request.forward)
+member정보 <-  response   <- jsp (session.getAttribute("member")

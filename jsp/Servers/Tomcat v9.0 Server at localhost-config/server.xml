@@ -153,7 +153,13 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="bootstrap" path="/bootstrap" reloadable="true" source="org.eclipse.jst.jee.server:bootstrap"/></Host>
+      <Context docBase="chap20" path="/chap20" reloadable="true" source="org.eclipse.jst.jee.server:chap20"/>
+      <Context docBase="chap19" path="/chap19" reloadable="true" source="org.eclipse.jst.jee.server:chap19"/>
+      <Context docBase="bootstrap_ch18" path="/" reloadable="true" source="org.eclipse.jst.jee.server:bootstrap_ch18"/>
+      
+      <Context docBase="chap03" path="/chap03" reloadable="true" source="org.eclipse.jst.jee.server:chap03"/>
+      <Context docBase="bootstrap" path="/bootstrap" reloadable="true" source="org.eclipse.jst.jee.server:bootstrap"/>
+      <Context docBase="bootstrap_ch19" path="/bootstrap_ch19" reloadable="true" source="org.eclipse.jst.jee.server:bootstrap_ch19"/><Context docBase="chap21" path="/chap21" reloadable="true" source="org.eclipse.jst.jee.server:chap21"/><Context docBase="board" path="/board" reloadable="true" source="org.eclipse.jst.jee.server:board"/><Context docBase="bootstrap_ch21" path="/bootstrap_ch21" reloadable="true" source="org.eclipse.jst.jee.server:bootstrap_ch21"/></Host>
     </Engine>
   </Service>
 </Server>

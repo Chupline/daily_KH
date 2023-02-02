@@ -22,7 +22,8 @@
 </tr>
 <tr>
 	<td>내용</td>
-	<td><u:pre value='${articleData.content}'/></td>
+	<%-- <td><u:pre value='${articleData.content}'/></td> --%>
+	<td>${articleData.content}</td>
 </tr>
 <tr>
 	<td colspan="2">
