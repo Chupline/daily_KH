@@ -1,0 +1,23 @@
+[ servlet ]
+class ClassName extends HttpServlet {
+	init()  {};
+	doGet() {};
+	doPost() {};
+}
+
+1. 경량화
+POJO (Plain Old Java Object) 
+class ClassName {
+
+}
+
+2. IoC (Inversion of Control : 제어의 역행)
+String str = new String("홍길동");	// 개발자가 str객체에 값을 대입하여 str을 사용
+str.equals("홍길동") // true
+	but
+@Autowire	
+String str;	// Spring이 String 객체를 찾아서 주입(DI ,Dependency Injection : 의존성 주입)
+str.equals("홍길동") // NullPointException
+
+3. AOP (Aspect Oriented Programming : 관점지향 프로그래밍)
+4. Container
