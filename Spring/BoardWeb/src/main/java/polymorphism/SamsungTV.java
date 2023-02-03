@@ -1,5 +1,8 @@
 package polymorphism;
 
+import org.springframework.stereotype.Component;
+
+@Component("tv")
 public class SamsungTV implements TV {
 	private Speaker speaker;
 	private int price;
@@ -19,10 +22,12 @@ public class SamsungTV implements TV {
 		this.price = price;
 	}
 
+	// 컨테이너가 구동하면서 객체 초기화하면서 처리하는 메소드
 	public void initMethod() {
 		System.out.println("객체 초기화 작업 처리...");
 	}
 	
+	// 객체 삭제 전에 처리할 로직을 처리하는 메소드
 	public void destoryMethod() {
 		System.out.println("객체 삭제 전에 처리할 로직 처리...");
 	}
@@ -47,11 +52,11 @@ public class SamsungTV implements TV {
 
 	public void volumeUp() {
 		speaker.volumeUp();
-		System.out.println("SamsungTV---소리 올린다.");
+		//System.out.println("SamsungTV---소리 올린다.");
 	}
 
 	public void volumeDown() {
 		speaker.volumeDown();
-		System.out.println("SamsungTV---소리 내린다.");
+		//System.out.println("SamsungTV---소리 내린다.");
 	}
 }

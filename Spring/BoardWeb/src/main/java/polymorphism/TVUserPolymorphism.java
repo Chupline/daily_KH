@@ -8,8 +8,6 @@ public class TVUserPolymorphism {
 		tv.volumeUp();
 		tv.volumeDown();
 		tv.powerOff();
-		
-		
 
 		tv = new LgTV();
 		tv.powerOn();

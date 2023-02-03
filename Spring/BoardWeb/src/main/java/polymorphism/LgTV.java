@@ -1,14 +1,15 @@
 package polymorphism;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("tv")
 public class LgTV implements TV {
-	@Autowired
-	//@Inject
-	//@Qualifier("sony")
-	//@Resource(name = "sony")
+	//@Autowired //타입으로 DI (의존성 주입)
+	//@Inject // Autowired와 동일
+	//@Qualifier("sony") //이름으로 DI
+	//@Resource(name = "sony") // Autowired + Qualifier : 타입 또는 이름으로 DI
 	private Speaker speaker;
 
 	public LgTV() {
@@ -24,12 +25,12 @@ public class LgTV implements TV {
 	}
 
 	public void volumeUp() {
-		//speaker.volumeUp();
-		System.out.println("LgTV---소리 올린다.");
+		speaker.volumeUp();
+		//System.out.println("LgTV---소리 올린다.");
 	}
 
 	public void volumeDown() {
-		//speaker.volumeDown();
-		System.out.println("LgTV---소리 내린다.");
+		speaker.volumeDown();
+		//System.out.println("LgTV---소리 내린다.");
 	}
 }

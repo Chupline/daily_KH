@@ -24,4 +24,5 @@ public class SamsungTVDependency implements TV {
 		speaker = new SonySpeaker();
 		speaker.volumeDown();
 	}
+
 }
