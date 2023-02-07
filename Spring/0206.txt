@@ -1,0 +1,9 @@
+1. MySQLConnectionTest.java
+java -> JDBC (pom.xml 설정) -> DB(MySQL)
+Spring(dao class) -> MyBatis -> JDBC -> DB(MySQL)
+
+2. DataSourceTest.java
+java -> Spring (rootContext.xml 설정) -> java -> JDBC -> DB(MySQL)
+
+3. MyBatisTest.java
+java -> Spring -> MyBatis -> JDBC -> DB(MySQL)

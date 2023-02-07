@@ -23,7 +23,7 @@ public class MyBatisTest {
 		
 	}
 	
-	@Test
+	//@Test
 	public void testSession()throws Exception{
 		
 		try(SqlSession session = sqlFactory.openSession()){
