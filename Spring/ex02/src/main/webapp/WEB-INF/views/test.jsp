@@ -83,7 +83,7 @@
 	<script>
 	
 		/* var bno = 123239; */
-		var bno = 983015;
+		var bno = 3;
 		
 		getPageList(1);
 
